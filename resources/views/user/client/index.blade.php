@@ -29,9 +29,9 @@
                                     <tr>
 
 
-                                        <td>{{$consultants->first()->name}}</td>
-                                          <td>{{$consultants->first()->email}}</td>
-                                            <td>{{$consultants->first()->bio}}</td>
+                                        <td>{{@$consultant->name}}</td>
+                                          <td>{{@$consultant->email}}</td>
+                                            <td>{{@$consultant->bio}}</td>
 
 
                                               <td><a href="{{url('uplodes/consultant')}}/{{$consultants->first()->image}}"> image link</a>
